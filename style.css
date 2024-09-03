@@ -46,12 +46,29 @@ ul {
         a:hover {
             background-color: rgb(236, 206, 170);
         }
-
-        #home {
-            background-color: rgb(236, 206, 170);
-        }
     }
 }
+
+.bar-home {
+    #home {
+        background-color: rgb(236, 206, 170);
+    }
+}
+
+.bar-about {
+    #about {
+        background-color: rgb(236, 206, 170);
+    }
+}
+
+.bar-contact {
+    #contact {
+        background-color: rgb(236, 206, 170);
+    }
+}
+
+
+
 
 main {
     display: flex;
@@ -88,6 +105,111 @@ main {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer {
