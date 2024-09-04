@@ -150,8 +150,55 @@ main {
                 }
             }
         }
+
+        .our-team {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+
+            h3 {
+                flex: 1;
+                margin-bottom: 30px;
+            }
+
+            .members {
+                width: 80%;
+                max-width: 1100px;
+                flex:1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                flex-wrap: wrap;
+
+                .member {
+                    flex: 1;
+                    margin: 15px 15px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .darker {
+                        font-weight: 700;
+                    }
+
+                    img {
+                        flex: 1;
+                        width: 100%;
+                        border-radius: 10px;
+                        flex: 1;
+                    }
+                }
+
+                
+
+            }
+        }
     }
 }
+
+
 
 
 
@@ -321,7 +368,7 @@ footer {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:768px) {
     .bar {
         display: flex;
         flex-direction: column;
@@ -351,10 +398,6 @@ footer {
             }
     
             a:hover {
-                background-color: rgb(236, 206, 170);
-            }
-    
-            #home {
                 background-color: rgb(236, 206, 170);
             }
         }
@@ -390,9 +433,64 @@ footer {
 
                 font-size: 20px;
                 margin-bottom: 60px;
+                margin-left: 10px;
+                margin-right: 10px;
                 text-align: center;
                 span {
                     background-color:rgb(236, 206, 170) ;
+                }
+            }
+        }
+
+        .container-about {
+            .our-services {
+                width: 100%;
+                text-align: center;
+                
+                h4 {
+                    margin-bottom: 30px;
+                    font-size: 17px;
+                    text-align: center;
+                }
+    
+                .three-serveces {
+                    flex-direction: column;
+                    .service {
+                        width: 100%;
+                        max-width: 300px;
+                        h5 {
+                            font-size: 14px;
+                        }
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+    
+            .our-team {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 30px 0;
+    
+                h3 {
+                    flex: 1;
+                }
+    
+                .members {
+                    flex-direction: column;
+                    .member {
+                        img {
+                            margin-bottom: 10px;
+                        }
+
+                        margin: 5px;
+                    }
+    
+                    
+    
                 }
             }
         }
