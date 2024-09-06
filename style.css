@@ -7,6 +7,13 @@
 body {
     font-family: 'Poppins' , sans-serif;
     line-height: 1.6;
+    .bar,.container,footer {
+
+        .embed {
+            font-weight: 400;
+            font-family: 'Dosis' ,sans-serif;
+        }
+    }
 }
 
 a {
@@ -26,10 +33,11 @@ ul {
     padding-top: 25px;
     margin-bottom: 150px;
     
+    .embed {
+        font-family: 'Embed' , sans-serif;
+    }
+    
     h2 {
-        .embed {
-            font-family: 'Dosis' , sans-serif;
-        }
         font-size: 35px;
         span {
             background-color: rgb(236, 206, 170);
@@ -65,6 +73,8 @@ ul {
     #contact {
         background-color: rgb(236, 206, 170);
     }
+    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
 
 
@@ -97,7 +107,10 @@ main {
         }
     
         h1 {
+            font-weight: 500;
             margin-bottom: 100px;
+            margin-left: 30px;
+            margin-right: 30px;
             text-align: center;
             span {
                 background-color:rgb(236, 206, 170) ;
@@ -150,6 +163,7 @@ main {
                 }
             }
         }
+        
 
         .our-team {
             display: flex;
@@ -190,9 +204,92 @@ main {
                         flex: 1;
                     }
                 }
+            }
+        }
+    }
 
-                
+    .container-contact {
+        .head {
+            background-color: black;
+            color: white;
+            padding: 60px 0;
+            width: 100%;
+            margin-bottom: 0;
+        }
 
+        h1 {
+
+            margin: 100px 20px auto;
+
+            span {
+                color: black;
+            }
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+
+            h3 {
+                margin: 30px 0;
+                font-size: 20px;
+            }
+
+            p {
+                margin-bottom: 20px;
+                font-weight: 400;
+                font-size: small;
+            }
+
+            .input {
+                width: 100%;
+                textarea,input {
+                    width: 40%;
+                    padding: 9px 0;
+                    margin-bottom:7px ;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    resize: none;
+                    font-family: 'Poppins' ,sans-serif;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+            
+            .message {
+                textarea {
+                    padding-bottom: 80px;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+
+            textarea::placeholder,
+            input::placeholder {
+                font-family: 'Poppins',sans-serif;
+                font-weight: 500;
+            }
+        }
+
+        .btn {
+            margin: 30px 0;
+
+            a {
+            font-size: 20px;
+            padding: 10px 15px;
+            background: black;
+            color: rgb(236, 206, 170);
+            border-radius: 5px;
+        }
+
+            a:hover {
+                background-color: rgb(236, 206, 170);
+                color: black;
             }
         }
     }
@@ -433,8 +530,8 @@ footer {
 
                 font-size: 20px;
                 margin-bottom: 60px;
-                margin-left: 10px;
-                margin-right: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
                 text-align: center;
                 span {
                     background-color:rgb(236, 206, 170) ;
@@ -494,6 +591,32 @@ footer {
                 }
             }
         }
+
+        .container-contact {
+            h1 {
+                margin: 20px;
+            }
+
+            .contact {
+                p {
+                    width:70%;
+                }
+
+                h3 {
+                    font-size: 13px;
+                }
+
+                .input {
+                    input,textarea {
+                        width: 90%;
+                    }
+                }
+                .btn {
+                    position: relative;
+                    right: 95px;
+                }
+            }
+        }
     }
 
     footer {
@@ -525,8 +648,4 @@ footer {
         }
         
     }
-}
-
-@media(max-width:500px) {
-    
 }
