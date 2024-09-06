@@ -73,12 +73,9 @@ ul {
     #contact {
         background-color: rgb(236, 206, 170);
     }
-    margin-bottom: 25px;
+    margin-bottom: 0;
     padding-bottom: 25px;
 }
-
-
-
 
 main {
     display: flex;
@@ -212,19 +209,24 @@ main {
         .head {
             background-color: black;
             color: white;
-            padding: 60px 0;
+            padding: 100px 0;
             width: 100%;
             margin-bottom: 0;
-        }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            h1 {
 
-        h1 {
-
-            margin: 100px 20px auto;
-
-            span {
-                color: black;
+                padding: 0;
+                margin: 0% 30px;
+                span {
+                    color: black;
+                }
             }
         }
+
+        
 
         .contact {
             display: flex;
@@ -500,6 +502,10 @@ footer {
         }
     }
 
+    .bar-contact {
+        margin-bottom: 0;
+    }
+
     main {
         display: flex;
         justify-content: center;
@@ -593,8 +599,12 @@ footer {
         }
 
         .container-contact {
-            h1 {
-                margin: 20px;
+            .head {
+                padding-top: 55px;
+                padding-bottom: 55px;
+                h1 {
+                    margin: 0 20px;
+                }
             }
 
             .contact {
